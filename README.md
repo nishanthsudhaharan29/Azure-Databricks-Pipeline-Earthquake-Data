@@ -1,4 +1,4 @@
-# Azure Data Engineering Pipeline: A Comprehensive Guide
+# Azure Data Engineering Pipeline
 
 ## Overview and Architecture
 
