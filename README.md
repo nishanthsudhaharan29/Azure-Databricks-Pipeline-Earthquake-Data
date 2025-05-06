@@ -71,7 +71,6 @@ We implement a **medallion architecture** to structure and organize data effecti
 4. Define external locations:
    - Navigate to **External Data > External Locations**.
    - Assign a name, select the storage credential, and specify the URL (use the container name and storage account name for `bronze`, `silver`, and `gold`).
-5. For detailed steps, refer to this helpful video: [Pathfinder Analytics](https://www.youtube.com/watch?v=kRfNXFh9T3U).
 
 ---
 
