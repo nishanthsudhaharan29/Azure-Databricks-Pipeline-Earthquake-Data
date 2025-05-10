@@ -74,6 +74,14 @@ We implement a **medallion architecture** to structure and organize data effecti
 
 ---
 
+## Step 6: Install Required Libraries
+1. Before running the `gold` notebook, install the `reverse_geocoder` library.
+   - Navigate to **Compute > Cluster > Libraries > + Install New Library**.
+   - Select **Source: PyPI** and enter **reverse_geocoder**.
+   - Wait a few minutes for the installation to complete.
+2. Use cluster-level libraries for consistency and shared environments across notebooks.
+---
+
 ## Step 5: Create and Execute Notebooks
 1. In the Databricks workspace, create a notebook for each layer (`bronze`, `silver`, `gold`).
    - Add the relevant code for `bronze` from GitHub.
@@ -85,15 +93,6 @@ We implement a **medallion architecture** to structure and organize data effecti
 ## Data in Silver Notebook
 
 ## Data in Gold Notebook
-
----
-
-## Step 6: Install Required Libraries
-1. Before running the `gold` notebook, install the `reverse_geocoder` library.
-   - Navigate to **Compute > Cluster > Libraries > + Install New Library**.
-   - Select **Source: PyPI** and enter **reverse_geocoder**.
-   - Wait a few minutes for the installation to complete.
-2. Use cluster-level libraries for consistency and shared environments across notebooks.
 
 ---
 ## Create a Workflow
@@ -127,6 +126,14 @@ We implement a **medallion architecture** to structure and organize data effecti
 6. In schedules and triggers, add a trigger to run every day at any particular time. eg. evryday at 6 a.m.
 7. Check if the workflow is working by running it
         
+---
+
+## Data Written to ADLS
+## Bronze Container
+
+## Silver Container
+
+## Gold Container
 
 ## Key Considerations
 - **Linked Services**: Ensure reusable and secure connections between Azure services.
