@@ -25,7 +25,7 @@ We implement a **medallion architecture** to structure and organize data effecti
 2. **Silver Layer**: Cleaned and normalized data, removing duplicates and handling missing values, ensuring it’s ready for analytics.
 3. **Gold Layer**: Aggregated and enriched data tailored to specific business needs, such as adding in country codes.
 
-![Logo](2.png)
+![Logo](screenshots/2.png)
 
 ### Understanding the API
 
@@ -50,7 +50,7 @@ We implement a **medallion architecture** to structure and organize data effecti
 1. Create a Databricks resource in Azure.
 2. Select the **Standard LTS (Long Term Support)** tier. Avoid using ML or other specialized tiers.
 
-![Logo](3.png)
+![Logo](screenshots/3.png)
 
 ---
 
@@ -64,7 +64,7 @@ We implement a **medallion architecture** to structure and organize data effecti
    - Click **Next > Managed Identity > Select Members**.
    - Select **Access Connector for Azure Databricks** as the managed identity.
    - Click **Review + Assign**.
-![Logo](4.png)
+![Logo](screenshots/4.png)
 ---
 
 ## Step 4: Configure Databricks
@@ -79,7 +79,7 @@ We implement a **medallion architecture** to structure and organize data effecti
    - Navigate to **External Data > External Locations**.
    - Assign a name, select the storage credential, and specify the URL (use the container name and storage account name for `bronze`, `silver`, and `gold`).
 
-![Logo](5.png)
+![Logo](screenshots/5.png)
 ---
 
 ## Step 6: Install Required Libraries
@@ -96,18 +96,18 @@ We implement a **medallion architecture** to structure and organize data effecti
    - Execute the notebook and refresh the Storage Account containers to verify updates.
    - Repeat the process for `silver` and `gold` notebooks, adding the corresponding code.
 
-   ![Logo](6.png)
+   ![Logo](screenshots/6.png)
   
 ## Data in Bronze Notebook
-![Logo](bn.png)
+![Logo](screenshots/bn.png)
 ## Data in Silver Notebook
-![Logo](sn1.png)
+![Logo](screenshots/sn1.png)
 
-![Logo](sn2.png)
+![Logo](screenshots/sn2.png)
 
-![Logo](sn3.png)
+![Logo](screenshots/sn3.png)
 ## Data in Gold Notebook
-![Logo](gn.png)
+![Logo](screenshots/gn.png)
 ---
 ## Create a Workflow
 1. In Databricks -> Workflows, create a new job
@@ -140,18 +140,18 @@ We implement a **medallion architecture** to structure and organize data effecti
 6. In schedules and triggers, add a trigger to run every day at any particular time. eg. evryday at 6 a.m.
 7. Check if the workflow is working by running it
 
-![Logo](7.png)
+![Logo](screenshots/7.png)
 
-![Logo](8.png)
+![Logo](screenshots/8.png)
 ---
 
 ## Data Written to ADLS
 ## Bronze Container
-![Logo](bc.png)
+![Logo](screenshots/bc.png)
 ## Silver Container
-![Logo](sc.png)
+![Logo](screenshots/sc.png)
 ## Gold Container
-![Logo](gc.png)
+![Logo](screenshots/gc.png)
 ## Key Considerations
 - **Linked Services**: Ensure reusable and secure connections between Azure services.
 - **Scalability**: Use Synapse for querying large datasets efficiently.
