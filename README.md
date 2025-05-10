@@ -79,6 +79,12 @@ We implement a **medallion architecture** to structure and organize data effecti
    - Add the relevant code for `bronze` from GitHub.
    - Execute the notebook and refresh the Storage Account containers to verify updates.
    - Repeat the process for `silver` and `gold` notebooks, adding the corresponding code.
+  
+## Data in Bronze Notebook
+
+## Data in Silver Notebook
+
+## Data in Gold Notebook
 
 ---
 
