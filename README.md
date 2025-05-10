@@ -14,6 +14,9 @@ This pipeline follows a modular architecture, integrating Azure’s powerful dat
 2. **Data Processing**: Databricks processes raw data into structured formats (bronze, silver, gold tiers).
 3. **Data Storage**: Azure Data Lake Storage serves as the backbone for storing and managing data at different stages.
 
+![Logo](1.png)
+
+
 ### Data Modeling
 
 We implement a **medallion architecture** to structure and organize data effectively:
