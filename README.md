@@ -99,11 +99,15 @@ We implement a **medallion architecture** to structure and organize data effecti
    ![Logo](6.png)
   
 ## Data in Bronze Notebook
-
+![Logo](bn.png)
 ## Data in Silver Notebook
+![Logo](sn1.png)
 
+![Logo](sn2.png)
+
+![Logo](sn3.png)
 ## Data in Gold Notebook
-
+![Logo](gn.png)
 ---
 ## Create a Workflow
 1. In Databricks -> Workflows, create a new job
@@ -143,11 +147,11 @@ We implement a **medallion architecture** to structure and organize data effecti
 
 ## Data Written to ADLS
 ## Bronze Container
-
+![Logo](bc.png)
 ## Silver Container
-
+![Logo](sc.png)
 ## Gold Container
-
+![Logo](gc.png)
 ## Key Considerations
 - **Linked Services**: Ensure reusable and secure connections between Azure services.
 - **Scalability**: Use Synapse for querying large datasets efficiently.
