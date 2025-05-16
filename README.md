@@ -2,6 +2,7 @@
 
 ## Overview and Architecture
 
+Designed and implemented an end-to-end Azure Data Engineering pipeline to automate the ingestion, processing, and storage of earthquake data for real-time analytics. Leveraged Azure Data Factory for orchestrating daily ingestion from the USGS Earthquake API, Databricks for data processing across bronze, silver, and gold layers, and Azure Data Lake Storage (ADLS) for scalable data storage. Employed reverse geocoding and data cleansing techniques to enrich and normalize data for analytics-ready outputs. This modular pipeline supports automated workflows using Databricks Workflows and delivers clean, structured data to stakeholders like government agencies and insurance companies, enabling faster decision-making and better risk assessment. The project showcases strong use of Azure-native tools, medallion architecture, and best practices in data engineering and pipeline automation.
 ### Business Case
 
 Earthquake data is incredibly valuable for understanding seismic events and mitigating risks. Government agencies, research institutions, and insurance companies rely on up-to-date information to plan emergency responses and assess risks. With this automated pipeline, we ensure these stakeholders get the latest data in a way that’s easy to understand and ready to use, saving time and improving decision-making.
