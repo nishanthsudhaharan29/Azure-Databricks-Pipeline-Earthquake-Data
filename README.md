@@ -11,7 +11,7 @@ Earthquake data is incredibly valuable for understanding seismic events and miti
 
 This pipeline follows a modular architecture, integrating Azure’s powerful data engineering tools to ensure scalability, reliability, and efficiency. The architecture includes:
 
-1. **Data Ingestion**: Azure Data Factory orchestrates the daily ingestion of earthquake data from the USGS Earthquake API.
+1. **Data Ingestion**: Azure Databricks orchestrates the daily ingestion of earthquake data from the USGS Earthquake API.
 2. **Data Processing**: Databricks processes raw data into structured formats (bronze, silver, gold tiers).
 3. **Data Storage**: Azure Data Lake Storage serves as the backbone for storing and managing data at different stages.
 
